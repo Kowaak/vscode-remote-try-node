@@ -1,7 +1,7 @@
 /*var http = require('http');
 var fs = require('fs');
 http.createServer(function(req,res){
-    res.writeHead(200, {'content-type':'text/html'});
+    res.writeHead(200,{'content-type':'text/html'});
     res.writeHead(200,{'content-type':'application/json'})
     var data = {
         id:444,
@@ -47,8 +47,8 @@ app.get('/', function (req, res) {
 app.get('/contact',function(req,res){
     res.send('contact')
 })
-app.get('/product',function(req,res){
-    res.send('product')
+app.get('/product/:id',function(req,res){
+    res.send('id: ' + req.params.id)
 })
 app.get('/other',function(req,res){
     res.send('other')
