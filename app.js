@@ -58,4 +58,4 @@ app.use('/assets', express.static('public'));
 app.get('/', function (req, res) {
     res.render('index',{query: req.query.id})
   })
-app.listen(3000)gjhkgkhj
+app.listen(3000)
